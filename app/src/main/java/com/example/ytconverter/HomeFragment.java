@@ -59,7 +59,6 @@ public class HomeFragment extends Fragment {
         pastebtn = view.findViewById(R.id.paste_btn);
         ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(CLIPBOARD_SERVICE);
         checkPermissions();
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.102.79:3000/") // Replace with your API base URL
                 .addConverterFactory(GsonConverterFactory.create())

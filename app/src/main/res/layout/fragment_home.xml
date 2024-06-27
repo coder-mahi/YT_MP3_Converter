@@ -11,16 +11,34 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
-
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/video"
+    android:contentDescription="Dev. Mahesh Shinde"
+    />
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="wrap_content"
             android:layout_margin="20dp"
             app:cardCornerRadius="30dp"
             app:cardElevation="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YouTube To Mp3 Converter"
+                android:layout_gravity="center"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:layout_margin="12dp"/>
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -36,12 +54,12 @@
                             android:id="@+id/textlink"
                             android:layout_width="280dp"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:background="#CCC8C8"
-                            android:hint="paste link here"
+                            android:background="@drawable/custom_edittext"
+                            android:hint="paste video link here"
                             android:inputType="textUri"
                             android:padding="10dp"
-                            android:textSize="18dp"
+                            android:textSize="15dp"
+                            android:layout_margin="5dp"
                             android:textStyle="italic"
                             tools:ignore="TouchTargetSizeCheck" />
 
@@ -49,12 +67,14 @@
                             android:id="@+id/paste_btn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:backgroundTint="@color/white"
                             android:contentDescription="paste button"
                             android:src="@drawable/ic_paste"
-                            tools:ignore="TouchTargetSizeCheck" />
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:padding="10dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/custom_edittext"
+                            />
                     </LinearLayout>
-
 
                     <Button
                         android:id="@+id/convert_btn"
@@ -62,7 +82,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:text="CONVERT"
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:background="@drawable/custom_button"/>
                     <TextView
                         android:id="@+id/convertlink_textview"
                         android:layout_width="wrap_content"
@@ -74,11 +95,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
-                        android:text="Download"
-                        android:textSize="18dp" />
+                        android:text="DOWNLOAD"
+                        android:textSize="18dp"
+                        android:background="@drawable/custom_button"/>
+                    />
 
                 </LinearLayout>
+
             </ScrollView>
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
