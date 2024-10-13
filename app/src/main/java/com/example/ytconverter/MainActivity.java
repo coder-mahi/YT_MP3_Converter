@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         about = (ImageView) findViewById(R.id.about);
         about.setOnClickListener(v -> {
-//            Uri uri = Uri.parse("https://mahesh_shinde_portfolio/netlify.app");
+//            Uri uri = Uri.parse("https://mahesh-shinde-portfolio/netlify.app");
             Toast.makeText(this, "Information About Developer", Toast.LENGTH_SHORT).show();
         });
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
